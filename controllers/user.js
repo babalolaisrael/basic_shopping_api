@@ -49,7 +49,7 @@ exports.login = (req, res, next) => {
                         { expiresIn: '24h'}
                         );
                     res.status(200).json({
-                        userId: user.id,
+                        userId: user._id,
                         token: token
                     });
                 }
